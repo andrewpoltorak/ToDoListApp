@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import CoreData
 
 var list: [String] = []
 
 class TextFieldViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    let context = UIApplication.shared().delegate as! AppDelegate.persistentContainer.viewContext
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -30,7 +33,8 @@ class TextFieldViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = list[indexPath.row]
+        let item = list[indexPath.row]
+        cell.textLabel?.text = item.name
         return cell
     }
     
