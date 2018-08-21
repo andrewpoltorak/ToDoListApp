@@ -1,19 +1,9 @@
-//
-//  FirstViewController.swift
-//  ToDoListApp
-//
-//  Created by Preferiti_mac on 16.08.18.
-//  Copyright © 2018 Admin. All rights reserved.
-//
-
 import UIKit
 import CoreData
 
-var list: [String] = []
+var list = [Items]()
 
 class TextFieldViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    let context = UIApplication.shared().delegate as! AppDelegate.persistentContainer.viewContext
     
     @IBOutlet weak var tableView: UITableView!
     

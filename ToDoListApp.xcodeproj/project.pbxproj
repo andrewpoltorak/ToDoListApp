@@ -14,8 +14,6 @@
 		4F50766521259F4E005D45B5 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F50766321259F4E005D45B5 /* AddItemViewController.swift */; };
 		4F50766621259F4E005D45B5 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F50766421259F4E005D45B5 /* TextFieldViewController.swift */; };
 		4F57735D2125FAD80008E723 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F57735B2125FAD80008E723 /* Model.xcdatamodeld */; };
-		4F577365212600540008E723 /* Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F577363212600540008E723 /* Entity+CoreDataClass.swift */; };
-		4F577366212600540008E723 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F577364212600540008E723 /* Entity+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +26,6 @@
 		4F50766321259F4E005D45B5 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		4F50766421259F4E005D45B5 /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 		4F57735C2125FAD80008E723 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		4F577363212600540008E723 /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		4F577364212600540008E723 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,23 +61,13 @@
 				4F50764F2125818E005D45B5 /* AppDelegate.swift */,
 				4F50766421259F4E005D45B5 /* TextFieldViewController.swift */,
 				4F50766321259F4E005D45B5 /* AddItemViewController.swift */,
-				4F577362212600540008E723 /* Model */,
-				4F57735B2125FAD80008E723 /* Model.xcdatamodeld */,
 				4F5076552125818E005D45B5 /* Main.storyboard */,
+				4F57735B2125FAD80008E723 /* Model.xcdatamodeld */,
 				4F5076582125818E005D45B5 /* Assets.xcassets */,
 				4F50765A2125818E005D45B5 /* LaunchScreen.storyboard */,
 				4F50765D2125818E005D45B5 /* Info.plist */,
 			);
 			path = ToDoListApp;
-			sourceTree = "<group>";
-		};
-		4F577362212600540008E723 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				4F577363212600540008E723 /* Entity+CoreDataClass.swift */,
-				4F577364212600540008E723 /* Entity+CoreDataProperties.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,11 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F577366212600540008E723 /* Entity+CoreDataProperties.swift in Sources */,
 				4F5076502125818E005D45B5 /* AppDelegate.swift in Sources */,
 				4F50766521259F4E005D45B5 /* AddItemViewController.swift in Sources */,
 				4F50766621259F4E005D45B5 /* TextFieldViewController.swift in Sources */,
-				4F577365212600540008E723 /* Entity+CoreDataClass.swift in Sources */,
 				4F57735D2125FAD80008E723 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
