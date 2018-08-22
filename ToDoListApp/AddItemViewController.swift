@@ -8,7 +8,6 @@ class AddItemViewController: UIViewController {
     @IBAction func addButton(_ sender: Any) {
         let newItem = Items(context: context)
         newItem.name = inputTextField.text!
-        newItem.comleted = true
         list.append(newItem)
         inputTextField.text = ""
         saveItems()

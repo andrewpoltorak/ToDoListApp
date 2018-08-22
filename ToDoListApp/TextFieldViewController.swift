@@ -10,6 +10,7 @@ class TextFieldViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadItems()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,7 +35,6 @@ class TextFieldViewController: UIViewController, UITableViewDelegate, UITableVie
             let item = list[indexPath.row]
             list.remove(at: indexPath.row)
             context.delete(item)
-            item.comleted = false
             do {
                 try context.save()
             } catch {
